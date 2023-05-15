@@ -1,6 +1,6 @@
-# Subangkar.github.io
+# Mahim.github.io
 
-GitHub personal website. Visit my website https://Subangkar.github.io
+GitHub personal website.
 
 ## Usage
 
