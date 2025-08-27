@@ -99,7 +99,7 @@
         Beyond the world of code and algorithms, I love immersing myself in new experiences—whether it’s traveling to unexplored destinations, savoring exotic cuisines, meeting fascinating people, or embracing diverse cultures. Feel free to browse around, learn more about my work, and reach out if you’d like to connect or collaborate—I’d love to hear from you!
         </p>
         <h3>
-          <a href="files/CV_Academic_20250211.pdf" target="_blank" aria-label="CV">
+          <a href="files/CV_RnD_Internship.pdf" target="_blank" aria-label="CV">
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
               <i aria-hidden="true" title="Curriculum Vitae (CV)" class="fa fa-file-text fa-stack-1x fa-inverse"></i><span class="sr-only">CV</span>
@@ -194,8 +194,11 @@
             <a href="https://www.imtiazkarim.net/">Dr. Imtiaz Karim</a>, 
             <a href="https://www.mirzamr.net/">Mirza Masfiqur Rahman</a>, 
             <a href="https://www.cs.purdue.edu/homes/bertino/">Dr. Elisa Bertino</a><br>
-            This work focuses on analyzing and finding security flaws in the 5G control plane protocols. We implemented a testbed using radio drivers by modifying open source suites deployed on mini base stations. With testbed we can asynchronously send protocol messages to smartphones via the 5G network to find out the vendor specific deviations from the 3GPP standards and potentials security implications.<br>
-            <b>Current state: </b>Ongoing<br>
+            <b>Problem:</b> Surface spec–implementation gaps and security risks in 5G control-plane protocols (PHY/MAC emphasis).<br>
+            <b>Approach:</b> Built a mini base-station testbed by modifying open-source radio stacks and enabling <i>asynchronous</i> injection of protocol messages to commodity smartphones.<br>
+            <b>Impact:</b> Identified vendor-specific deviations from 3GPP with concrete security implications.<br>
+            <b>Stack:</b> C/C++, Java, Open5GS core, srsRAN, OpenAirInterface.<br>
+            <b>Status:</b> Ongoing as part of a cellular security research project at Purdue.
           </p>          
         </div>
         <!-- <div class="resume-date text-md-right"><span class="text-primary">February 2021 - Present</span></div> -->
@@ -213,9 +216,11 @@
             <a href="https://cse.buet.ac.bd/faculty_list/detail/atif">Dr. Atif Hasan Rahman</a>, 
             <a href="https://faculty.uaeu.ac.ae/m_masud/">Mohammad Mehedy Masud</a>, 
             <a href="https://sites.google.com/site/mohammedeunusali/home">Dr. Mohammed Eunus Ali</a><br>
-            This work focuses on reliable prediction on Photoplethysmography (PPG) signals that noisy due to motion artifacts. We have used Bayesian Deep Learning Model implemented in Python using PyTorch framework to provide an uncertainty estimate along with the prediction. We have also implemented a Tizen Native and Background Service App in C for continuous and timed raw signal data collection from Smartwatch. Our Model beats the state of the art work both on the largest publicly available dataset and on the MIMIC-III dataset. It was the first application of Bayesian Deep Learning in this domain.<br>
-            <b>Current state: </b>Accepted in UbiComp 2022, Published in IMWUT<br>
-            <a href="https://dl.acm.org/doi/10.1145/3517247">Publication URL</a> <a href="https://arxiv.org/abs/2011.00753">arXiv</a>
+            <b>Problem:</b> PPG signals are noisy from motion; predictions need calibrated uncertainty for reliable AF detection.<br>
+            <b>Approach:</b> Bayesian deep learning model in PyTorch that outputs uncertainty alongside predictions.<br>
+            <b>Impact:</b> +7–25% over prior SOTA on the largest public PPG dataset and +10–14% on MIMIC-III; first BDL application in this domain.<br>
+            <b>Status:</b> Accepted at UbiComp ’22; published in IMWUT.<br>
+            <a href="https://dl.acm.org/doi/10.1145/3517247">Publication URL</a> <a href="https://arxiv.org/abs/2011.00753">arXiv Link</a>
           </p>          
         </div>
         <!-- <div class="resume-date text-md-right"><span class="text-primary">February 2021 - Present</span></div> -->
@@ -230,8 +235,10 @@
             <a href="https://sites.google.com/site/mohammedeunusali/home">Dr. Mohammed Eunus Ali</a>,
             <a href="https://cse.buet.ac.bd/faculty_list/detail/atif">Dr. Atif Hasan Rahman</a>            
             <br>
-            In this work we are experimenting on contrastive learning to learn patient similarity from physiological signals, particularly Photoplethysmography (PPG) signals. Due to limited availability of dataset, we are currently conducting a case study on Atrial Fibrillation Detection from PPG signals. It is the first application of Contrastive Similarity Learning in this domain.<br>
-            <b>Current state: </b>Ongoing<br>
+            <b>Problem:</b> Measure patient similarity directly from physiological (PPG) signals with limited labeled data.<br>
+            <b>Approach:</b> Designed a new contrastive loss; conducted an AF case study under data scarcity.<br>
+            <b>Impact:</b> First application of contrastive similarity learning in this domain; preprint available.<br>
+            <b>Status:</b> Ongoing
             <a href="https://arxiv.org/abs/2308.02433">arXiv Link</a>
           </p>          
         </div>
@@ -301,12 +308,12 @@
         </div>
         <div class="resume-date text-md-right"><span class="text-primary">February 2016 - February 2021</span></div>
       </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+      <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
         <div class="resume-content">
           <h3><a href="https://ndc.edu.bd/">Notre Dame College</a></h3>
           <div><strong>Obtained Degree:</strong> H.S.C.</div>
-<!--           <div><strong>Subject:</strong> Science</div> -->
-<!--           <p><strong>GPA:</strong> 5.00/5.00</p> -->
+          <div><strong>Subject:</strong> Science</div>
+          <p><strong>GPA:</strong> 5.00/5.00</p>
         </div>
         <div class="resume-date text-md-right"><span class="text-primary">July 2013 - August 2015</span></div>
       </div>
@@ -314,11 +321,11 @@
         <div class="resume-content">
           <h3><a href="http://www.mmodel.edu.bd/">Motijheel Model School & College</a></h3>
           <div><strong>Obtained Degree:</strong> S.S.C.</div>
-<!--           <div><strong>Subject:</strong> Science</div> -->
-<!--           <p><strong>GPA:</strong> 5.00/5.00</p> -->
+          <div><strong>Subject:</strong> Science</div>
+          <p><strong>GPA:</strong> 5.00/5.00</p>
         </div>
         <div class="resume-date text-md-right"><span class="text-primary">January 2007 - May 2013</span></div>
-      </div>
+      </div> -->
   </section>
 
   <hr class="m-0" />
@@ -355,69 +362,148 @@
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- ===================== Projects (drop-in items) ===================== -->
   <hr class="m-0" />
   <section id="projects" class="resume-section p-1 p-lg-5 d-flex align-items-center">
     <div class="w-100">
       <h4 class="mb-1">Software & Hardware Projects</h4>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-        <div class="resume-content">
-          <div class="subheading mb-0">Foodsquare</div>
-          <p> An information system web-app developed in Django for an online restaurant hub on the perspective of Dhaka
-            City of Bangladesh
-            <br> GitHub: <a
-              href="https://github.com/Subangkar/Foodsquare-Web-App">https://github.com/Subangkar/Foodsquare-Web-App</a>
-            <br> Docker: <a
-              href="https://hub.docker.com/r/subangkar/foodsquare">https://hub.docker.com/r/subangkar/foodsquare</a>
-          </p>
-        </div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-        <div class="resume-content">
-          <div class="subheading mb-0">Image Captioning in PyTorch</div>
-          <p> A Deep Learning Project to generate image caption on Flickr8k Image dataset using Resnet-101 & LSTM with
-            Attention Mechanism
-            <br> GitHub: <a
-              href="https://github.com/Subangkar/Image-Captioning-Attention-PyTorch">https://github.com/Subangkar/Image-Captioning-Attention-PyTorch</a>
-          </p>
-        </div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-        <div class="resume-content">
-          <div class="subheading mb-0">Tizen Native App & Service to Collect Raw Signal</div>
-          <p> A Tizen Native UI app and Background Service to collect raw sensor data for analysis
-            <br> GitHub (BG Service): <a
-              href="https://github.com/Subangkar/Tizen-Sensor-Raw-Data-Saving-Service">https://github.com/Subangkar/Tizen-Sensor-Raw-Data-Saving-Service</a>
-            <br> GitHub (Native UI App): <a
-              href="https://github.com/Subangkar/Gear-Fit-2-Sensor-Raw-Data-Sync">https://github.com/Subangkar/Gear-Fit-2-Sensor-Raw-Data-Sync</a>
-          </p>
-        </div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-        <div class="resume-content">
-          <div class="subheading mb-0">Security Projects</div>
-          <ul>
-            <li>ICMP Ping Spoofing: <a
-                href="https://github.com/Subangkar/ICMP-Ping-Spoofing">https://github.com/Subangkar/ICMP-Ping-Spoofing</a>
-            </li>
-            <li>Buffer Overflow Attack using Seedlab: <a
-                href="https://github.com/Subangkar/Buffer-Overflow-Attack-Seedlab">https://github.com/Subangkar/Buffer-Overflow-Attack-Seedlab</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-        <div class="resume-content">
-          <div class="subheading mb-0">Real Time Audio to Frequency Spectrum Transformation on Atmega32 Microcontroller
+        <!-- Adversarial Malware Variant Generation via Reinforcement Learning -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">Adversarial Malware Variant Generation via Reinforcement Learning</div>
+            <ul class="mb-0">
+              <li><strong>Focus:</strong> Generate adversarial malware variants to evade detectors.</li>
+              <li><strong>Methods:</strong> GRPO, PPO, Actor–Critic for iterative binary modifications.</li>
+              <li><strong>Impact:</strong> Built end-to-end training & evaluation loop; reward shaping for evasion.</li>
+              <li><strong>Stack:</strong> PyTorch, Python.</li>
+            </ul>
           </div>
-          <p> A project to demonstrate frequency spectrum visualization from real time audio via time domain to frequency domain conversion on Atmega32 microcontroller
-            <br> GitHub: <a
-              href="https://github.com/Subangkar/Real-Time-Audio-to-Frequency-Spectrum-Transformation-on-Atmega32">https://github.com/Subangkar/Real-Time-Audio-to-Frequency-Spectrum-Transformation-on-Atmega32</a>
-          </p>
         </div>
-      </div>
-    </div>
-  </section>
+
+        <!-- Security Analysis of 5G Control-Plane Protocols -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">Security Analysis of 5G Control-Plane Protocols</div>
+            <ul class="mb-0">
+              <li><strong>Focus:</strong> PHY/MAC-layer analysis to uncover control-plane flaws.</li>
+              <li><strong>Testbed:</strong> Mini base-station by modifying open-source radio stacks; async message injection to phones.</li>
+              <li><strong>Outcome:</strong> Found vendor-specific deviations from 3GPP with security implications.</li>
+              <li><strong>Stack:</strong> C/C++, Java, Open5GS, srsRAN, OpenAirInterface.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BayesBeat -->
+        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">BayesBeat — Reliable AFib Detection from Noisy PPG (UbiComp ’22)</div>
+            <ul class="mb-0">
+              <li><strong>Problem:</strong> Motion-induced noise in PPG requires calibrated uncertainty.</li>
+              <li><strong>Approach:</strong> Bayesian deep learning model (PyTorch) with predictive uncertainty.</li>
+              <li><strong>Results:</strong> +7–25% on largest public PPG dataset; +10–14% on MIMIC-III; first BDL in this domain.</li>
+              <li><a href="https://github.com/Subangkar/BayesBeat">Code</a> · <a href="https://dl.acm.org/doi/abs/10.1145/3517247">Paper</a></li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- Contrastive Patient Similarity (PPG) -->
+        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">Contrastive Learning for Patient Similarity (PPG)</div>
+            <ul class="mb-0">
+              <li><strong>Idea:</strong> Contrastive objective to learn patient similarity from PPG.</li>
+              <li><strong>Contributions:</strong> New loss; AFib case study under limited data; first in this domain.</li>
+              <li><a href="https://arxiv.org/pdf/2308.02433">arXiv</a> · <a href="https://github.com/Subangkar/Simsig">Code</a></li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- AI-Generated Text Detection -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">AI-Generated Text Detection via Adversarial Training</div>
+            <ul class="mb-0">
+              <li><strong>Method:</strong> distilBERT detector vs. T5-small paraphraser (PPO + back-translation/lexical rewrites).</li>
+              <li><strong>Engineering:</strong> ~4× training speed-up via cached corpus generation & PyTorch DataParallel.</li>
+              <li><a href="https://github.com/Subangkar/CS536-project">Code</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SDN Delay/Jitter GNN -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">SDN Per-Flow Delay/Jitter Prediction with Graph Neural Networks</div>
+            <ul class="mb-0">
+              <li><strong>Focus:</strong> Graph-based models to predict per-flow delay/jitter.</li>
+              <li><strong>Setup:</strong> ONOS + Mininet on AWS; 540 labeled simulations; D-ITG traffic & 27 routing matrices.</li>
+              <li><a href="https://github.com/Subangkar/cs577-project">Code</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Foodsquare -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">FoodSquare — Multi-Tenant Restaurant Marketplace</div>
+            <ul class="mb-0">
+              <li><strong>Goal:</strong> End-to-end Django platform for restaurants & customers (self-service menus, real-time search/checkout).</li>
+              <li><strong>Deploy:</strong> Containerized; one-command deploy to Docker Hub.</li>
+              <li><a href="https://github.com/Subangkar/Foodsquare-Web-App">Code</a> · <a href="https://hub.docker.com/r/subangkar/foodsquare">Docker</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ===================== Projects present on website (keep them too) ===================== -->
+
+        <!-- Image Captioning in PyTorch -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">Image Captioning in PyTorch</div>
+            <ul class="mb-0">
+              <li><strong>Model:</strong> ResNet-101 encoder + LSTM with Attention on Flickr8k.</li>
+              <li><a href="https://github.com/Subangkar/Image-Captioning-Attention-PyTorch">Code</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tizen Native App & Background Service -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">Tizen Native App & Background Service (Sensor Data Collection)</div>
+            <ul class="mb-0">
+              <li><strong>Goal:</strong> Collect raw sensor data on-device for downstream analysis.</li>
+              <li><a href="https://github.com/Subangkar/Tizen-Sensor-Raw-Data-Saving-Service">BG Service</a> ·
+                  <a href="https://github.com/Subangkar/Gear-Fit-2-Sensor-Raw-Data-Sync">Native UI App</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Security Projects (keep concise) -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">Security Mini-Projects</div>
+            <ul class="mb-0">
+              <li>ICMP Ping Spoofing — <a href="https://github.com/Subangkar/ICMP-Ping-Spoofing">Code</a></li>
+              <li>Buffer Overflow Attack (SEED Labs) — <a href="https://github.com/Subangkar/Buffer-Overflow-Attack-Seedlab">Code</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Real-Time Audio Spectrum (Atmega32) -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
+          <div class="resume-content">
+            <div class="subheading mb-0">Real-Time Audio → Frequency Spectrum (Atmega32)</div>
+            <ul class="mb-0">
+              <li><strong>Summary:</strong> Time-to-frequency conversion and visualization from microphone input on AVR.</li>
+              <li><a href="https://github.com/Subangkar/Real-Time-Audio-to-Frequency-Spectrum-Transformation-on-Atmega32">Code</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ===================== /Projects (drop-in items) ===================== -->
+         </div>
+         </section>
 
   <!-- Interests -->
   <hr class="m-0" />
@@ -426,10 +512,11 @@
       <h2 class="mb-5">Interests</h2>
       <h3>Research Interests</h3>
       <ul>
+        <li>LLMs, Agent</li>
         <li>Systems and Network Security</li>
-        <li>Privacy</li>
         <li>Machine Learning & Data Mining</li>
-        <li>Ubiquitous Computing</li>
+        <li>Cellular Security</li>
+        <!-- <li>Ubiquitous Computing</li> -->
       </ul>
       <h3>Hobbies and Other Interests</h3>
       <ul>
