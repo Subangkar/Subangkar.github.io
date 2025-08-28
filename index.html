@@ -1,640 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subangkar Karmaker Shanto — Research Portfolio</title>
+  <meta name="description" content="Research Portfolio of Subangkar Karmaker Shanto." />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="files/profile-favicon.png" sizes="32x32"/>
+  <link rel="apple-touch-icon" href="files/profile-favicon.png"/>
 
-  <title>Subangkar Karmaker Shanto</title>
-  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/22829833">
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="font-mfizz/font-mfizz.css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
-
-  <style>
-    footer {
-      text-align: right;
-      padding: 50px;
-      /* background-color: DarkSalmon; */
-      /* color: white; */
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Subangkar Karmaker Shanto</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Work Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#research">Research Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards & Services</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#leader">Extra-Curricular </a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">Connect with Me</a>
-        </li>
-      </ul>
+  <div class="topbar">
+    <div class="wrap nav" style="width:100%">
+      <img src="files/profile.jpg" alt="Subangkar portrait" class="nav-avatar" />
+      <a href="#about" class="brand">Subangkar</a>
+      <div class="spacer"></div>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode" onclick="toggleTheme()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mainmenu" onclick="toggleMenu()">Menu</button>
+      <nav id="mainmenu" class="menu" aria-label="Primary">
+        <!-- <a href="#about">About</a> -->
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#awards-services">Awards/Services</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#cv">CV</a>
+      </nav>
     </div>
-  </nav>
+  </div>
 
-  <div class="container-fluid p-0">
+  <!-- Hero / About -->
+  <header id="about" class="hero">
+    <div class="wrap">
+      <div class="about-head">
+        <div class="about-text">
+          <h1>Subangkar Karmaker Shanto</h1>
+          <div class="subtitle">CS PhD Candidate, Purdue University, Indiana, United States of America</div>
+          <p class="small muted location">
+            <svg class="icon-pin" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2c-3.31 0-6 2.64-6 5.9 0 4.43 5.63 11.1 5.86 11.39.06.07.14.11.22.11s.16-.04.22-.11C12.37 19 18 12.33 18 7.9 18 4.64 15.31 2 12 2Zm0 8.1a2.2 2.2 0 1 1 0-4.4 2.2 2.2 0 0 1 0 4.4Z"/>
+            </svg>
+            West Lafayette, IN, USA
+          </p>
+        </div>
+        <img src="files/profile.jpg" alt="Photo of Subangkar Karmaker Shanto" class="about-photo" />
+      </div>
 
-    <section id="about" class="resume-section p-3 p-lg-5 d-flex align-items-center">
-      <div class="w-100">
-        <h1 class="mb-0">Subangkar Karmaker Shanto</h1>
-        <div class="subheading mb-5">CS PhD Candidate, Purdue University, Indiana, United States of America</div>
-        <p class="lead mb-5"><i class="fa fa-hand-stop-o"></i>Hello and thank you for stopping by!<br><br>
-        Welcome to my corner of the web. I’m currently a Graduate Teaching Assistant in the Department of Computer Science at Purdue University, where I have the privilege of working in the Cyber2s Lab under the guidance of the esteemed Dr. Elisa Bertino. Prior to this, I worked as a Lecturer at the Department of CSE, United International University, Bangladesh and an adjunct faculty at Bangladesh University of Engineering and Technology (BUET). I graduated from the Department of Computer Science and Engineering at BUET, an experience that laid the foundation for my passion for technology and innovation.
-        My research interests span a variety of exciting fields, including Systems and Network Security, LLM and Data Mining.
-        <br><br>          
+      <p class="lead" style="text-align: justify;">
+        Hello and thank you for stopping by!
+        <br><br>
+        Welcome to my corner of the web. I’m currently a Graduate Teaching Assistant in the Department of Computer Science at Purdue University, where I have the privilege of working in the Cyber2s Lab under the guidance of the esteemed Dr. Elisa Bertino. Prior to this, I worked as a Lecturer at the Department of CSE, United International University, Bangladesh and an adjunct faculty at Bangladesh University of Engineering and Technology (BUET).
+        <br><br>
+        I graduated from the Department of Computer Science and Engineering at BUET, an experience that laid the foundation for my passion for technology and innovation. My research interests span a variety of exciting fields, including Systems and Network Security, LLM and Data Mining.
+        <br><br>
         Beyond the world of code and algorithms, I love immersing myself in new experiences—whether it’s traveling to unexplored destinations, savoring exotic cuisines, meeting fascinating people, or embracing diverse cultures. Feel free to browse around, learn more about my work, and reach out if you’d like to connect or collaborate—I’d love to hear from you!
-        </p>
-        <h3>
-          <a href="files/CV_RnD_Internship.pdf" target="_blank" aria-label="CV">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-              <i aria-hidden="true" title="Curriculum Vitae (CV)" class="fa fa-file-text fa-stack-1x fa-inverse"></i><span class="sr-only">CV</span>
-            </span>
-          </a>
-          <a href="https://maps.app.goo.gl/JeTJfuQTXJnLkLRj7" target="_blank" aria-label="Google Map Contributor Profile">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-              <i aria-hidden="true" title="Google Map Contributor Profile" class="fas fa-plane-departure fa-stack-1x fa-inverse"></i><span class="sr-only">Google Map Contributions</span>
-            </span>
-          </a>
-        </h3>
-        
-        <footer>
-          <!-- <br><br><br> -->
-          <p><i><b>Last Updated: August 27, 2025</b></i></p>
-        </footer>
+      </p>
+
+      <div class="cta" id="cv">
+        <a class="btn primary" href="files/CV_RnD_Internship.pdf" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 3a1 1 0 0 1 1 1v6.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 10.59V4a1 1 0 0 1 1-1zm-7 14a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/>
+          </svg>
+          <span>CV</span>
+        </a>
+        <a class="btn" href="https://maps.app.goo.gl/JeTJfuQTXJnLkLRj7" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2c-3.31 0-6 2.64-6 5.9 0 4.43 5.63 11.1 5.86 11.39.06.07.14.11.22.11s.16-.04.22-.11C12.37 19 18 12.33 18 7.9 18 4.64 15.31 2 12 2Zm0 8.1a2.2 2.2 0 1 1 0-4.4 2.2 2.2 0 0 1 0 4.4Z"/>
+        </svg>
+        <span>Google Map Contributions</span>
+        </a>
+      </div>
+
+      <div class="last-updated muted" style="margin-top:14px;">Last Updated: August 27, 2025</div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Education  -->
+    <section id="education">
+      <div class="wrap">
+        <h2>Education</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Purdue University</h3>
+            <div class="when">Pursuing Degree: PhD in Computer Science — August 2024 – Present</div>
+          </article>
+          <article class="card">
+            <h3>Bangladesh University of Engineering and Technology (BUET)</h3>
+            <div class="when">B.Sc. Engg — February 2016 – February 2021</div>
+            <ul class="list small">
+              <li>Subject: Computer Science and Engineering (CSE)</li>
+              <li>CGPA: 3.88/4.00 (Ranked 8th in a class of 143 graduating students)</li>
+              <li>Major CGPA: 3.95/4.00</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
-  </div>
 
-  <!-- Experience -->
-  <hr class="m-0" />
-  <section id="experience" class="resume-section p-3 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <h2 class="mb-1">Experience</h2>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
-        <div class="resume-content">
-          <h3 class="mb-0">Graduate Teaching Assistant <a href="https://www.cs.purdue.edu/people/graduate-students/sshanto.html" target="_blank"><i class="fa fa-external-link"></i></a></h3>
-          <div class="subheading mb-1"><a href="https://www.cs.purdue.edu/" style="color: inherit; text-decoration: inherit">Department of CS</a>, <a href="https://www.purdue.edu/" style="color: inherit; text-decoration: inherit">Purdue University</a></div>
-          <p>
-            <strong>Courses Conducted:</strong> Programming-I (Java)
-          </p>
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary">January 2025 - Present</span></div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
-        <div class="resume-content">
-          <h3 class="mb-0">Graduate Research Assistant <a href="https://www.cs.purdue.edu/people/graduate-students/sshanto.html" target="_blank"><i class="fa fa-external-link"></i></a></h3>
-          <div class="subheading mb-1"><a href="https://www.cs.purdue.edu/" style="color: inherit; text-decoration: inherit">Department of CS</a>, <a href="https://www.purdue.edu/" style="color: inherit; text-decoration: inherit">Purdue University</a></div>
-          <p>Working in Cyber2s lab under supervision of <a href="https://www.cs.purdue.edu/homes/bertino/">Dr. Elisa Bertino</a>
-          </p>
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary">August 2024 - January 2025</span></div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
-        <div class="resume-content">
-          <h3 class="mb-0">Lecturer <a href="https://cse.uiu.ac.bd/profiles/shanto-subangkar-karmaker/" target="_blank"><i class="fa fa-external-link"></i></a></h3>
-          <div class="subheading mb-1"><a href="https://cse.uiu.ac.bd/" style="color: inherit; text-decoration: inherit">Department of CSE</a>, <a href="https://www.uiu.ac.bd/" style="color: inherit; text-decoration: inherit">United International University (UIU)</a></div>
-          <p>Working as a Lecturer at Department of CSE, United International University, Bangladesh.<br>
-            <strong>Courses Conducted:</strong> Structured Programming Language, Object Oriented Programming, Artificial Intelligence, Bioinformatics,
-            Algorithms, Computer Networks lab, Human Computer Interaction and Society, Technology & Engineering Ethics
-          </p>
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary">February 2021 - Present</span></div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
-        <div class="resume-content">
-          <h3 class="mb-0">Lecturer (Part-time)</h3>
-          <div class="subheading mb-1">Department of CSE, Bangladesh University of Engineering and Technology (BUET)</div>
-          <p>Worked as a Part-time Lecturer at Department of CSE, Bangladesh University of Engineering and Technology, Bangladesh.<br>
-            <strong>Courses Conducted:</strong> Structured Programming Language Lab</p>
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary">January 2022 - April 2022</span></div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
-        <div class="resume-content">
-          <h3 class="mb-0">Research Assistant (Part-time)</h3>
-          <!-- <div class="subheading mb-3">Department of CSE,BUET</div> -->
-          <p>Worked as a graduate research assistant under supervision of <a
-              href="https://cse.buet.ac.bd/faculty/facdetail.php?id=atif">Dr. Atif Hasan Rahman</a>&nbsp; and <a
-              href="https://cse.buet.ac.bd/faculty/facdetail.php?id=eunus">Dr. Mohammed Eunus Ali</a>&nbsp;in <a
-              href="https://cse.buet.ac.bd/">CSE, BUET</a>. Multiple research projects are funded by the government of
-            Bangladesh.</p>
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary">February 2021 - January 2022</span></div>
-      </div>
-    </div>
-  </section>
+    <!-- Research -->
+    <section id="research">
+      <div class="wrap">
+        <h2>Research Works</h2>
+        <div class="grid cards">
 
-  <!-- Research -->
-  <hr class="m-0" />
-  <section id="research" class="resume-section p-1 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <h2 class="mb-2">Research Works</h2>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-        <div class="resume-content">
-          <h4 class="mb-0">Security Analysis of 5G Control Plane Protocols</h4>
-          <!-- <div class="subheading mb-1">Collaborators: <a href="https://cse.buet.ac.bd/faculty_list/detail/atif" style="color: inherit; text-decoration: inherit">Dr. Atif Hasan Rahman</a></div> -->
-          <p>
-            <b>Collaborators: </b>
-            <a href="https://www.imtiazkarim.net/">Dr. Imtiaz Karim</a>, 
-            <a href="https://www.mirzamr.net/">Mirza Masfiqur Rahman</a>, 
-            <a href="https://www.cs.purdue.edu/homes/bertino/">Dr. Elisa Bertino</a><br>
-            <b>Problem:</b> Surface spec–implementation gaps and security risks in 5G control-plane protocols (PHY/MAC emphasis).<br>
-            <b>Approach:</b> Built a mini base-station testbed by modifying open-source radio stacks and enabling <i>asynchronous</i> injection of protocol messages to commodity smartphones.<br>
-            <b>Impact:</b> Identified vendor-specific deviations from 3GPP with concrete security implications.<br>
-            <b>Stack:</b> C/C++, Java, Open5GS core, srsRAN, OpenAirInterface.<br>
-            <b>Status:</b> Ongoing as part of a cellular security research project at Purdue.
-          </p>          
-        </div>
-        <!-- <div class="resume-date text-md-right"><span class="text-primary">February 2021 - Present</span></div> -->
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-        <div class="resume-content">
-          <h4 class="mb-0">BayesBeat: Reliable Atrial Fibrillation Detection from Noisy Photoplethysmography Data</h4>
-          <!-- <div class="subheading mb-1">Collaborators: <a href="https://cse.buet.ac.bd/faculty_list/detail/atif" style="color: inherit; text-decoration: inherit">Dr. Atif Hasan Rahman</a></div> -->
-          <p>
-            <b>Collaborators: </b>
-            <a href="https://sarathismg.github.io/">Sarkar Snigdha Sarathi Das</a>, 
-            <a href="https://uk.linkedin.com/in/masum-rahman-0a4364112">Masum Rahman</a>, 
-            <a href="https://cse.buet.ac.bd/faculty_list/detail/saifulislam">Md. Saiful Islam</a>,             
-            <a href="https://cse.buet.ac.bd/faculty_list/detail/atif">Dr. Atif Hasan Rahman</a>, 
-            <a href="https://faculty.uaeu.ac.ae/m_masud/">Mohammad Mehedy Masud</a>, 
-            <a href="https://sites.google.com/site/mohammedeunusali/home">Dr. Mohammed Eunus Ali</a><br>
-            <b>Problem:</b> PPG signals are noisy from motion; predictions need calibrated uncertainty for reliable AF detection.<br>
-            <b>Approach:</b> Bayesian deep learning model in PyTorch that outputs uncertainty alongside predictions.<br>
-            <b>Impact:</b> +7–25% over prior SOTA on the largest public PPG dataset and +10–14% on MIMIC-III; first BDL application in this domain.<br>
-            <b>Status:</b> Accepted at UbiComp ’22; published in IMWUT.<br>
-            <a href="https://dl.acm.org/doi/10.1145/3517247">Publication URL</a> <a href="https://arxiv.org/abs/2011.00753">arXiv Link</a>
-          </p>          
-        </div>
-        <!-- <div class="resume-date text-md-right"><span class="text-primary">February 2021 - Present</span></div> -->
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-        <div class="resume-content">
-          <h4 class="mb-0">Contrastive Learning Based Approach for Patient Similarity</h4>
-          <!-- <div class="subheading mb-1">Collaborators: <a href="https://cse.buet.ac.bd/faculty_list/detail/atif" style="color: inherit; text-decoration: inherit">Dr. Atif Hasan Rahman</a></div> -->
-          <p>
-            <b>Supervisor: </b>
-            <a href="https://sites.google.com/site/mohammedeunusali/home">Dr. Mohammed Eunus Ali</a>,
-            <a href="https://cse.buet.ac.bd/faculty_list/detail/atif">Dr. Atif Hasan Rahman</a>            
-            <br>
-            <b>Problem:</b> Measure patient similarity directly from physiological (PPG) signals with limited labeled data.<br>
-            <b>Approach:</b> Designed a new contrastive loss; conducted an AF case study under data scarcity.<br>
-            <b>Impact:</b> First application of contrastive similarity learning in this domain; preprint available.<br>
-            <b>Status:</b> Ongoing
-            <a href="https://arxiv.org/abs/2308.02433">arXiv Link</a>
-          </p>          
-        </div>
-        <!-- <div class="resume-date text-md-right"><span class="text-primary"></span></div> -->
-      </div>
-
-<!--       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-        <div class="resume-content">
-          <h4 class="mb-0">Privacy risk of Machine Learning Models</h4>
-     
-          <p>
-            <b>Supervisor: </b>
-            <a href="https://smehnaz.github.io/">Dr. Shagufta Mehnaz</a><br>
-            In this work we are experimenting on vulnerabilities and privacy risks of Trained Classification Models introduced particularly from Model Explainability. We explore potential application of various model explanation techniques like LIME, SHAP, Counterfactual Explanation etc. for implementing model inversion attacks. We are currently working on how we can generate a more robust attack dataset capable of leaking more information about the black box model using minimal knowledge about the training dataset. We are also exploring the direction in which LIME explanations can be exploited for property inference attacks.<br>
-            <b>Current state: </b>Ongoing<br>
-          </p>          
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary"></span></div>
-      </div>
- -->
-    </div>
-  </section>
-
-  <!-- PUBLICATIONS -->
-  <hr class="m-0" />
-  <section id="publications" class="resume-section p-3 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <h2 class="mb-5">Publications</h2>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-        <div class="resume-content">
-          <p><br> Sarkar Snigdha Sarathi Das,<b> Subangkar Karmaker Shanto</b>, Masum Rahman, Md. Saiful Islam, Atif
-            Rahman, Mohammad Mehedy Masud, Mohammed Eunus Ali. <br>
-            <b>BayesBeat: Reliable Atrial Fibrillation Detection from Noisy Photoplethysmography Data</b>. <br>
-            <i><strong>[UbiComp 2022]</strong> Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
-              Technologies, 6, 1, Article 8 (March 2022)</i>
-            <br> <a href="https://dl.acm.org/doi/10.1145/3517247"> [pdf] </a> <a
-              href="https://github.com/Subangkar/BayesBeat"> [code] </a> <a href="https://arxiv.org/abs/2011.00753">
-              [arXiv] </a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <hr class="m-0" />
-  <section id="education" class="resume-section p-3 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <h2 class="mb-5">Education</h2>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-        <div class="resume-content">
-          <h3><a href="https://www.purdue.edu/">Purdue University</a></h3>
-          <div><strong>Pursuing Degree:</strong> PhD in Computer Science</div>
-<!--           <p><strong>Running CGPA:</strong> 4.00/4.00  -->
-          </p>          
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary">August 2024 - Present</span></div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-        <div class="resume-content">
-          <h3><a href="http://buet.ac.bd/">Bangladesh University of Engineering and Technology (BUET)</a></h3>
-          <div><strong>Obtained Degree:</strong> B.Sc. Engg</div>
-          <div><strong>Subject:</strong> Computer Science and Engineering (CSE)</div>
-          <p><strong>CGPA:</strong> 3.88/4.00 <i>(Ranked 8th in a class of 143 graduating students)</i><br>
-            <strong>Major CGPA:</strong> 3.95/4.00
-          </p>          
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary">February 2016 - February 2021</span></div>
-      </div>
-      <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-        <div class="resume-content">
-          <h3><a href="https://ndc.edu.bd/">Notre Dame College</a></h3>
-          <div><strong>Obtained Degree:</strong> H.S.C.</div>
-          <div><strong>Subject:</strong> Science</div>
-          <p><strong>GPA:</strong> 5.00/5.00</p>
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary">July 2013 - August 2015</span></div>
-      </div>
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-        <div class="resume-content">
-          <h3><a href="http://www.mmodel.edu.bd/">Motijheel Model School & College</a></h3>
-          <div><strong>Obtained Degree:</strong> S.S.C.</div>
-          <div><strong>Subject:</strong> Science</div>
-          <p><strong>GPA:</strong> 5.00/5.00</p>
-        </div>
-        <div class="resume-date text-md-right"><span class="text-primary">January 2007 - May 2013</span></div>
-      </div> -->
-  </section>
-
-  <hr class="m-0" />
-  <section id="skills" class="resume-section p-3 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <h2 class="mb-4">Skills</h2>
-      <!-- <div class="subheading mb-3">&nbsp;</div> -->
-      <div class="subheading mb-2">Technical Skills</div>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, C, C++, Java, Assembly Language(Intel x86 Architecture, MIPS
-          Architecture)</li>
-        <li><strong>Scripting Languages:</strong> Bash, HTML, CSS, LATEX, SQL</li>
-        <li><strong>ML & NLP:</strong> LLMs, RL, RAG, Agent</li>
-        <li><strong>Deep Learning Frameworks:</strong> PyTorch, Keras</li>
-        <li><strong>Web Frameworks:</strong> Django, Django REST Framework</li>
-        <li><strong>Other Frameworks:</strong> Corda (Blockchain), JavaFX (Java GUI)</li>
-        <li><strong>SQL Database:</strong> Oracle SQL, MySQL, PostgreSQL, SQLite</li>
-        <li><strong>Design Tools:</strong> Proteus circuit simulator, Logisim circuit simulator and CISCO packet tracer
-        </li>
-        <li><strong>Hardware Tools:</strong> Atmega32 Microcontroller</li>
-        <li><strong>Software & Project Management:</strong> Git, GitHub, Docker, Docker Hub</li>
-        <li><strong>Documentation Tools:</strong> OpenAPI Specification, Swagger, Redoc</li>
-        <li><strong>IDEs & Editors:</strong> PyCharm, CLion, IntelliJ Idea, Codeblocks, VSCode, MS Visual Studio, Tizen
-          Studio, Atmel Studio</li>
-        <li><strong>Software Tools:</strong> MS Word, PowerPoint, Excel</li>
-        <!-- <li><strong>NoSQL Database:</strong>&nbsp;</li> -->
-      </ul>
-      <div class="subheading mb-2">Communication Skills</div>
-      <ul>
-        <li>English</li>
-        <li>Bengali (Bangla)</li>
-        <li>Hindi (Limited Proficiency)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===================== Projects (drop-in items) ===================== -->
-  <hr class="m-0" />
-  <section id="projects" class="resume-section p-1 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <h4 class="mb-1">Software & Hardware Projects</h4>
-        <!-- Adversarial Malware Variant Generation via Reinforcement Learning -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">Adversarial Malware Variant Generation via Reinforcement Learning</div>
-            <ul class="mb-0">
-              <li><strong>Focus:</strong> Generate adversarial malware variants to evade detectors.</li>
-              <li><strong>Methods:</strong> GRPO, PPO, Actor–Critic for iterative binary modifications.</li>
-              <li><strong>Impact:</strong> Built end-to-end training & evaluation loop; reward shaping for evasion.</li>
-              <li><strong>Stack:</strong> PyTorch, Python.</li>
+          <article class="card">
+            <h3>Security Analysis of 5G Control Plane Protocols</h3>
+            <ul class="list">
+              <li><strong>Collaborators:</strong> Dr. Imtiaz Karim, Mirza Masfiqur Rahman, Dr. Elisa Bertino</li>
+              <li><strong>Problem:</strong> Surface spec–implementation gaps and security risks in 5G control-plane protocols (PHY/MAC emphasis).</li>
+              <li><strong>Approach:</strong> Built a mini base-station testbed by modifying open-source radio stacks and enabling asynchronous injection of protocol messages to commodity smartphones.</li>
+              <li><strong>Impact:</strong> Identified vendor-specific deviations from 3GPP with concrete security implications.</li>
+              <li><strong>Stack:</strong> C/C++, Java, Open5GS core, srsRAN, OpenAirInterface.</li>
+              <li><strong>Status:</strong> Ongoing as part of a cellular security research project at Purdue.</li>
             </ul>
-          </div>
-        </div>
+          </article>
 
-        <!-- Security Analysis of 5G Control-Plane Protocols -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">Security Analysis of 5G Control-Plane Protocols</div>
-            <ul class="mb-0">
-              <li><strong>Focus:</strong> PHY/MAC-layer analysis to uncover control-plane flaws.</li>
-              <li><strong>Testbed:</strong> Mini base-station by modifying open-source radio stacks; async message injection to phones.</li>
-              <li><strong>Outcome:</strong> Found vendor-specific deviations from 3GPP with security implications.</li>
-              <li><strong>Stack:</strong> C/C++, Java, Open5GS, srsRAN, OpenAirInterface.</li>
+          <article class="card">
+            <h3>BayesBeat: Reliable Atrial Fibrillation Detection from Noisy Photoplethysmography Data</h3>
+            <ul class="list">
+              <li><strong>Collaborators:</strong> Sarkar Snigdha Sarathi Das, Masum Rahman, Md. Saiful Islam, Dr. Atif Hasan Rahman, Mohammad Mehedy Masud, Dr. Mohammed Eunus Ali</li>
+              <li><strong>Problem:</strong> PPG signals are noisy from motion; predictions need calibrated uncertainty for reliable AF detection.</li>
+              <li><strong>Approach:</strong> Bayesian deep learning model in PyTorch that outputs uncertainty alongside predictions.</li>
+              <li><strong>Impact:</strong> +7–25% over prior SOTA on the largest public PPG dataset and +10–14% on MIMIC-III; first BDL application in this domain.</li>
+              <li><strong>Status:</strong> Accepted at UbiComp ’22; published in IMWUT.</li>
+              <li class="small">
+                <a href="https://dl.acm.org/doi/10.1145/3517247" target="_blank" rel="noopener">Publication URL</a> ·
+                <a href="https://arxiv.org/abs/2011.00753" target="_blank" rel="noopener">arXiv Link</a>
+              </li>
             </ul>
-          </div>
-        </div>
+          </article>
 
-        <!-- BayesBeat -->
-        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">BayesBeat — Reliable AFib Detection from Noisy PPG (UbiComp ’22)</div>
-            <ul class="mb-0">
-              <li><strong>Problem:</strong> Motion-induced noise in PPG requires calibrated uncertainty.</li>
-              <li><strong>Approach:</strong> Bayesian deep learning model (PyTorch) with predictive uncertainty.</li>
-              <li><strong>Results:</strong> +7–25% on largest public PPG dataset; +10–14% on MIMIC-III; first BDL in this domain.</li>
-              <li><a href="https://github.com/Subangkar/BayesBeat">Code</a> · <a href="https://dl.acm.org/doi/abs/10.1145/3517247">Paper</a></li>
+          <article class="card">
+            <h3>Contrastive Learning Based Approach for Patient Similarity</h3>
+            <ul class="list">
+              <li><strong>Supervisor:</strong> Dr. Mohammed Eunus Ali, Dr. Atif Hasan Rahman</li>
+              <li><strong>Problem:</strong> Measure patient similarity directly from physiological (PPG) signals with limited labeled data.</li>
+              <li><strong>Approach:</strong> Designed a new contrastive loss; conducted an AF case study under data scarcity.</li>
+              <li><strong>Impact:</strong> First application of contrastive similarity learning in this domain; preprint available.</li>
+              <li><strong>Status:</strong> Ongoing <a href="https://arxiv.org/abs/2308.02433" target="_blank" rel="noopener">arXiv Link</a></li>
             </ul>
-          </div>
-        </div> -->
+          </article>
 
-        <!-- Contrastive Patient Similarity (PPG) -->
-        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">Contrastive Learning for Patient Similarity (PPG)</div>
-            <ul class="mb-0">
-              <li><strong>Idea:</strong> Contrastive objective to learn patient similarity from PPG.</li>
-              <li><strong>Contributions:</strong> New loss; AFib case study under limited data; first in this domain.</li>
-              <li><a href="https://arxiv.org/pdf/2308.02433">arXiv</a> · <a href="https://github.com/Subangkar/Simsig">Code</a></li>
-            </ul>
-          </div>
-        </div> -->
-
-        <!-- AI-Generated Text Detection -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">AI-Generated Text Detection via Adversarial Training</div>
-            <ul class="mb-0">
-              <li><strong>Method:</strong> distilBERT detector vs. T5-small paraphraser (PPO + back-translation/lexical rewrites).</li>
-              <li><strong>Engineering:</strong> ~4× training speed-up via cached corpus generation & PyTorch DataParallel.</li>
-              <li><a href="https://github.com/Subangkar/CS536-project">Code</a></li>
-            </ul>
-          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- SDN Delay/Jitter GNN -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">SDN Per-Flow Delay/Jitter Prediction with Graph Neural Networks</div>
-            <ul class="mb-0">
-              <li><strong>Focus:</strong> Graph-based models to predict per-flow delay/jitter.</li>
-              <li><strong>Setup:</strong> ONOS + Mininet on AWS; 540 labeled simulations; D-ITG traffic & 27 routing matrices.</li>
-              <li><a href="https://github.com/Subangkar/cs577-project">Code</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Foodsquare -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">FoodSquare — Multi-Tenant Restaurant Marketplace</div>
-            <ul class="mb-0">
-              <li><strong>Goal:</strong> End-to-end Django platform for restaurants & customers (self-service menus, real-time search/checkout).</li>
-              <li><strong>Deploy:</strong> Containerized; one-command deploy to Docker Hub.</li>
-              <li><a href="https://github.com/Subangkar/Foodsquare-Web-App">Code</a> · <a href="https://hub.docker.com/r/subangkar/foodsquare">Docker</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- ===================== Projects present on website (keep them too) ===================== -->
-
-        <!-- Image Captioning in PyTorch -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">Image Captioning in PyTorch</div>
-            <ul class="mb-0">
-              <li><strong>Model:</strong> ResNet-101 encoder + LSTM with Attention on Flickr8k.</li>
-              <li><a href="https://github.com/Subangkar/Image-Captioning-Attention-PyTorch">Code</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Tizen Native App & Background Service -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">Tizen Native App & Background Service (Sensor Data Collection)</div>
-            <ul class="mb-0">
-              <li><strong>Goal:</strong> Collect raw sensor data on-device for downstream analysis.</li>
-              <li><a href="https://github.com/Subangkar/Tizen-Sensor-Raw-Data-Saving-Service">BG Service</a> ·
-                  <a href="https://github.com/Subangkar/Gear-Fit-2-Sensor-Raw-Data-Sync">Native UI App</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Security Projects (keep concise) -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">Security Mini-Projects</div>
-            <ul class="mb-0">
-              <li>ICMP Ping Spoofing — <a href="https://github.com/Subangkar/ICMP-Ping-Spoofing">Code</a></li>
-              <li>Buffer Overflow Attack (SEED Labs) — <a href="https://github.com/Subangkar/Buffer-Overflow-Attack-Seedlab">Code</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Real-Time Audio Spectrum (Atmega32) -->
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-1">
-          <div class="resume-content">
-            <div class="subheading mb-0">Real-Time Audio → Frequency Spectrum (Atmega32)</div>
-            <ul class="mb-0">
-              <li><strong>Summary:</strong> Time-to-frequency conversion and visualization from microphone input on AVR.</li>
-              <li><a href="https://github.com/Subangkar/Real-Time-Audio-to-Frequency-Spectrum-Transformation-on-Atmega32">Code</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- ===================== /Projects (drop-in items) ===================== -->
-         </div>
-         </section>
-
-  <!-- Interests -->
-  <hr class="m-0" />
-  <section id="interests" class="resume-section p-3 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <h2 class="mb-5">Interests</h2>
-      <h3>Research Interests</h3>
-      <ul>
-        <li>LLMs, Agent</li>
-        <li>Systems and Network Security</li>
-        <li>Machine Learning & Data Mining</li>
-        <li>Cellular Security</li>
-        <!-- <li>Ubiquitous Computing</li> -->
-      </ul>
-      <h3>Hobbies and Other Interests</h3>
-      <ul>
-        <li>Traveling</li>
-        <li>Watching movies</li>
-        <li>Listening to music</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Awards -->
-  <hr class="m-0" />
-  <section id="awards" class="resume-section p-3 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <h2 class="mb-3">Achievements</h2>
-      <ul class="fa-ul mb-0">
-        <li><strong>Winner: </strong>Blockchain Olympiad Bangladesh February, 2021&nbsp;</li>
-        <li><strong>Winner: </strong>National Hackathon on Frontier Technologies February, 2020&nbsp;</li>
-        <li><strong>Merit Award Winner: </strong>International Blockchain Olympiad June, 2020&nbsp;</li>
-        <li><strong>B.Sc.: </strong>Secured place in Dean's List in 3 levels&nbsp;</li>
-      </ul>
-      <br>
-      <h2 class="mb-3">Other Services</h2>
-      <ul class="fa-ul mb-0">
-        <li><strong>Supervisor</strong> of <strong>Gold Prize Winner team of International Blockchain Olympiad</strong> 2023 Final&nbsp;<br>
-          Hosted in Amsterdam, The Netherlands, EU from 15th to 17th of November 2023. Supervised Team Apocalypse from UIU, Bangladesh.<br>
-          <a href="https://drive.google.com/drive/folders/110dlpfZZWQBYijhYVt-2dD7Lewbd8hhP">Certificates Link</a>
-        </li>
-        <br>
-        <li><strong>Problem setter </strong>of UIU Intra University Deep Learning Sprint Fall 2022&nbsp;<br>
-          Prepared Dataset to Distinguish between Relevant/Irrelevant Image Captions using Deep Learning<br>
-          <a href="https://www.kaggle.com/competitions/uiu-intra-university-deep-learning-sprint-fall-22">Kaggle Contest Link</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-  <!-- Contact -->
-  <section id="contact" class="resume-section p-3 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <h2 class="mb-2">Contact</h2>
-      <div style="width: 100%; overflow: hidden;">
-        <div style="width: 440px; float: left;">
-          <!-- <i style="font-size:24px" class="fa"></i> -->
-          <i class="fa fa-map-marker" style="font-size:40px"></i>
-          Lawson Computer Science Building, 305 N University St, West Lafayette, IN 47907, USA 
-           <br><br><br>
-           <div class="social-icons">
-            <a href="https://www.linkedin.com/in/subangkar-karmaker/">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/Subangkar">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/subangkar.karmaker/">
-              <i class="fab fa-instagram"></i>
-            </a>            
-            <a href="https://www.facebook.com/karmaker.shanto/">
-              <i class="fab fa-facebook"></i>
-            </a>            
-            <a href="https://t.me/Subangkar_Kr">
-              <i class="fab fa-telegram"></i>
-            </a>
-            <a href="https://scholar.google.com/citations?user=psMybBsAAAAJ&hl=en">
-              <i class="fab fa-google"></i>
-            </a>
-          </div>
-          <br><br>
-          <!-- <h3>Social</h3> -->
-          <h3>Email</h3>
-          <ul>
-            <li><strong><a href="mailto:subangkar.karmaker@gmail.com">subangkar.karmaker@gmail.com</a></strong> (Personal)</li>
-            <li><strong><a href="mailto:sshanto@purdue.edu">sshanto@purdue.edu</a></strong> (Academic/Work)</li>
-            <li><a href="mailto:shanto@cse.uiu.ac.bd">shanto@cse.uiu.ac.bd</a></li>
-            <li><a href="mailto:subangkar.karmaker@ra.cse.buet.ac.bd">subangkar.karmaker@ra.cse.buet.ac.bd</a></li>
-            <li><a href="mailto:subangkar@teacher.cse.buet.ac.bd">subangkar@teacher.cse.buet.ac.bd</a></li>
-          </ul>
-        </div>
-        <div style="margin-left: 460px;"> 
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe 
-                width="477" 
-                height="258" 
-                id="gmap_canvas" 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.1540846040893!2d-86.91949572398849!3d40.42758687143781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2b392b0e639%3A0x2a9a340e5400eece!2sLawson%20Computer%20Science%20Building!5e0!3m2!1sen!2sus!4v1739253106980!5m2!1sen!2sus"
-                frameborder="0" 
-                scrolling="no" 
-                marginheight="0" 
-                marginwidth="0">
-              </iframe>
-              <br>
-              <style>
-                .mapouter { position: relative; text-align: right; height: 258px; width: 477px; }
-                .gmap_canvas { overflow: hidden; background: none !important; height: 258px; width: 477px; }
-              </style>
+    <!-- Publications -->
+    <section id="publications">
+      <div class="wrap">
+        <h2>Publications</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>BayesBeat: Reliable Atrial Fibrillation Detection from Noisy Photoplethysmography Data</h3>
+            <div class="small muted">Sarkar Snigdha Sarathi Das, Subangkar Karmaker Shanto, Masum Rahman, Md. Saiful Islam, Atif Rahman, Mohammad Mehedy Masud, Mohammed Eunus Ali.</div>
+            <p class="small">
+              [UbiComp 2022] Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 6, 1, Article 8 (March 2022)
+            </p>
+            <div class="links small">
+              <a href="https://dl.acm.org/doi/10.1145/3517247" target="_blank" rel="noopener">[pdf]</a>
+              <a href="https://github.com/Subangkar/BayesBeat" target="_blank" rel="noopener">[code]</a>
+              <a href="https://arxiv.org/abs/2011.00753" target="_blank" rel="noopener">[arXiv]</a>
             </div>
-          </div>
-          
+          </article>
         </div>
       </div>
-            
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience">
+      <div class="wrap">
+        <h2>Work Experience</h2>
+        <div class="grid cards">
+
+          <article class="card">
+            <h3>Graduate Teaching Assistant</h3>
+            <div class="when">Department of CS, Purdue University — January 2025 – Present</div>
+            <ul class="list">
+              <li>Courses Conducted: Programming-I (Java)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Graduate Research Assistant</h3>
+            <div class="when">Department of CS, Purdue University — August 2024 – January 2025</div>
+            <ul class="list">
+              <li>Working in Cyber2s lab under supervision of Dr. Elisa Bertino</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Lecturer</h3>
+            <div class="when">Department of CSE, United International University (UIU) — February 2021 – Present</div>
+            <ul class="list">
+              <li>Working as a Lecturer at Department of CSE, United International University, Bangladesh.</li>
+              <li>Courses Conducted: Structured Programming Language, Object Oriented Programming, Artificial Intelligence, Bioinformatics, Algorithms, Computer Networks lab, Human Computer Interaction and Society, Technology &amp; Engineering Ethics</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Lecturer (Part-time)</h3>
+            <div class="when">Department of CSE, Bangladesh University of Engineering and Technology (BUET) — January 2022 – April 2022</div>
+            <ul class="list">
+              <li>Courses Conducted: Structured Programming Language Lab</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Research Assistant (Part-time)</h3>
+            <div class="when">Department of CSE, BUET — February 2021 – January 2022</div>
+            <ul class="list">
+              <li>Worked under supervision of Dr. Atif Hasan Rahman and Dr. Mohammed Eunus Ali in CSE, BUET. Multiple research projects are funded by the government of Bangladesh.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <div class="grid cards">
+
+          <article class="card">
+            <div class="kicker">Technical Skills</div>
+            <ul class="list">
+              <li><strong>Programming Languages:</strong> Python, C, C++, Java, Assembly Language (Intel x86 Architecture, MIPS Architecture)</li>
+              <li><strong>Scripting Languages:</strong> Bash, HTML, CSS, LATEX, SQL</li>
+              <li><strong>ML &amp; NLP:</strong> LLMs, RL, RAG, Agent</li>
+              <li><strong>Deep Learning Frameworks:</strong> PyTorch, Keras</li>
+              <li><strong>Web Frameworks:</strong> Django, Django REST Framework</li>
+              <li><strong>Other Frameworks:</strong> Corda (Blockchain), JavaFX (Java GUI)</li>
+              <li><strong>SQL Database:</strong> Oracle SQL, MySQL, PostgreSQL, SQLite</li>
+              <li><strong>Design Tools:</strong> Proteus circuit simulator, Logisim circuit simulator and CISCO packet tracer</li>
+              <li><strong>Hardware Tools:</strong> Atmega32 Microcontroller</li>
+              <li><strong>Software &amp; Project Management:</strong> Git, GitHub, Docker, Docker Hub</li>
+              <li><strong>Documentation Tools:</strong> OpenAPI Specification, Swagger, Redoc</li>
+              <li><strong>IDEs &amp; Editors:</strong> PyCharm, CLion, IntelliJ Idea, Codeblocks, VSCode, MS Visual Studio, Tizen Studio, Atmel Studio</li>
+              <li><strong>Software Tools:</strong> MS Word, PowerPoint, Excel</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="kicker">Communication Skills</div>
+            <ul class="list">
+              <li>English</li>
+              <li>Bengali (Bangla)</li>
+              <li>Hindi (Limited Proficiency)</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="wrap">
+        <h2>Software &amp; Hardware Projects</h2>
+        <div class="grid cards">
+
+          <article class="card project">
+            <h3>Adversarial Malware Variant Generation via Reinforcement Learning</h3>
+            <ul class="list">
+              <li>Focus: Generate adversarial malware variants to evade detectors.</li>
+              <li>Methods: GRPO, PPO, Actor–Critic for iterative binary modifications.</li>
+              <li>Impact: Built end-to-end training &amp; evaluation loop; reward shaping for evasion.</li>
+              <li>Stack: PyTorch, Python.</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <h3>Security Analysis of 5G Control-Plane Protocols</h3>
+            <ul class="list">
+              <li>Focus: PHY/MAC-layer analysis to uncover control-plane flaws.</li>
+              <li>Testbed: Mini base-station by modifying open-source radio stacks; async message injection to phones.</li>
+              <li>Outcome: Found vendor-specific deviations from 3GPP with security implications.</li>
+              <li>Stack: C/C++, Java, Open5GS, srsRAN, OpenAirInterface.</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <h3>AI-Generated Text Detection via Adversarial Training</h3>
+            <ul class="list">
+              <li>Method: distilBERT detector vs. T5-small paraphraser (PPO + back-translation/lexical rewrites).</li>
+              <li>Engineering: ~4× training speed-up via cached corpus generation &amp; PyTorch DataParallel.</li>
+            </ul>
+            <div class="links small">
+              <a href="https://github.com/Subangkar/cs577-project" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>SDN Per-Flow Delay/Jitter Prediction with Graph Neural Networks</h3>
+            <ul class="list">
+              <li>Focus: Graph-based models to predict per-flow delay/jitter.</li>
+              <li>Setup: ONOS + Mininet on AWS; 540 labeled simulations; D-ITG traffic &amp; 27 routing matrices.</li>
+            </ul>
+            <div class="links small">
+              <a href="https://github.com/Subangkar/CS536-project" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>FoodSquare — Multi-Tenant Restaurant Marketplace</h3>
+            <ul class="list">
+              <li>Goal: End-to-end Django platform for restaurants &amp; customers (self-service menus, real-time search/checkout).</li>
+              <li>Deploy: Containerized; one-command deploy to Docker Hub.</li>
+            </ul>
+            <div class="links small">
+              <a href="https://github.com/Subangkar/Foodsquare-Web-App" target="_blank" rel="noopener">Code</a> ·
+              <a href="https://hub.docker.com/r/subangkar/foodsquare" target="_blank" rel="noopener">Docker</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>Image Captioning in PyTorch</h3>
+            <ul class="list">
+              <li>Model: ResNet-101 encoder + LSTM with Attention on Flickr8k.</li>
+            </ul>
+            <div class="links small">
+              <a href="https://github.com/Subangkar/Image-Captioning-Attention-PyTorch" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>Tizen Native App &amp; Background Service (Sensor Data Collection)</h3>
+            <ul class="list">
+              <li>Goal: Collect raw sensor data on-device for downstream analysis.</li>
+            </ul>
+            <div class="links small">
+              <a href="https://github.com/Subangkar/Tizen-Sensor-Raw-Data-Saving-Service" target="_blank" rel="noopener">BG Service</a> ·
+              <a href="https://github.com/Subangkar/Gear-Fit-2-Sensor-Raw-Data-Sync" target="_blank" rel="noopener">Native UI App</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>Security Mini-Projects</h3>
+            <ul class="list">
+              <li>ICMP Ping Spoofing — <a href="https://github.com/Subangkar/ICMP-Ping-Spoofing" target="_blank" rel="noopener">Code</a></li>
+              <li>Buffer Overflow Attack (SEED Labs) — <a href="https://github.com/Subangkar/Buffer-Overflow-Attack-Seedlab" target="_blank" rel="noopener">Code</a></li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <h3>Real-Time Audio → Frequency Spectrum (Atmega32)</h3>
+            <ul class="list">
+              <li>Summary: Time-to-frequency conversion and visualization from microphone input on AVR.</li>
+            </ul>
+            <div class="links small">
+              <a href="https://github.com/Subangkar/Real-Time-Audio-to-Frequency-Spectrum-Transformation-on-Atmega32" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests">
+      <div class="wrap">
+        <h2>Interests</h2>
+        <div class="grid cards">
+          <article class="card">
+            <div class="kicker">Research Interests</div>
+            <ul class="list">
+              <li>LLMs, Agent</li>
+              <li>Systems and Network Security</li>
+              <li>Machine Learning &amp; Data Mining</li>
+              <li>Cellular Security</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="kicker">Hobbies and Other Interests</div>
+            <ul class="list">
+              <li>Traveling</li>
+              <li>Watching movies</li>
+              <li>Listening to music</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Services -->
+    <section id="awards-services">
+      <div class="wrap">
+        <h2>Awards &amp; Services</h2>
+        <div class="grid cards">
+          <article class="card">
+            <div class="kicker">Achievements</div>
+            <ul class="list">
+              <li>Winner: Blockchain Olympiad Bangladesh — February 2021</li>
+              <li>Winner: National Hackathon on Frontier Technologies — February 2020</li>
+              <li>Merit Award Winner: International Blockchain Olympiad — June 2020</li>
+              <li>B.Sc.: Secured place in Dean's List in 3 levels</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="kicker">Other Services</div>
+            <ul class="list">
+              <li>Supervisor of Gold Prize Winner team of International Blockchain Olympiad 2023 Final — Hosted in Amsterdam, The Netherlands, EU from 15th to 17th of November 2023. Supervised Team Apocalypse from UIU, Bangladesh. <a href="https://drive.google.com/drive/folders/110dlpfZZWQBYijhYVt-2dD7Lewbd8hhP" target="_blank" rel="noopener">Certificates Link</a></li>
+              <li>Problem setter of UIU Intra University Deep Learning Sprint Fall 2022 — Prepared Dataset to Distinguish between Relevant/Irrelevant Image Captions using Deep Learning. <a href="https://www.kaggle.com/competitions/uiu-intra-university-deep-learning-sprint-fall-22" target="_blank" rel="noopener">Kaggle Contest Link</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="wrap">
+        <h2>Connect with Me</h2>
+        <div class="grid cards connect-grid">
+
+          <article class="card">
+            <div class="social-links" aria-label="Social Links" style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:10px 0 2px">
+              <a href="https://www.linkedin.com/in/subangkar-karmaker/" target="_blank" rel="noopener"
+                 style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:var(--text); border:1px solid var(--border); background:var(--chip); padding:6px 10px; border-radius:999px">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3 9h4v12H3zM10 9h3.8v1.7h.1c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.65 4.78 6.08V21h-4v-5.35c0-1.28-.02-2.92-1.78-2.92-1.79 0-2.07 1.4-2.07 2.83V21h-4z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="https://github.com/Subangkar" target="_blank" rel="noopener"
+                 style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:var(--text); border:1px solid var(--border); background:var(--chip); padding:6px 10px; border-radius:999px">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.23.7-3.91-1.4-3.91-1.4-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.76.41-1.27.75-1.56-2.58-.29-5.3-1.29-5.3-5.76 0-1.27.46-2.3 1.2-3.11-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.19a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.19 3.2-1.19.63 1.59.23 2.76.11 3.05.74.81 1.2 1.84 1.2 3.11 0 4.48-2.73 5.46-5.33 5.75.42.36.8 1.07.8 2.15v3.18c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5Z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://www.instagram.com/subangkar.karmaker/" target="_blank" rel="noopener"
+                 style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:var(--text); border:1px solid var(--border); background:var(--chip); padding:6px 10px; border-radius:999px">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.25-3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/>
+                </svg>
+                <span>Instagram</span>
+              </a>
+
+              <a href="https://www.facebook.com/karmaker.shanto" target="_blank" rel="noopener"
+                 style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:var(--text); border:1px solid var(--border); background:var(--chip); padding:6px 10px; border-radius:999px">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M13.5 22V13.2H16l.4-3h-2.9V8c0-.9.3-1.5 1.5-1.5H16V3.2c-.3 0-1.3-.2-2.5-.2-2.4 0-4 1.5-4 4.2v2.1H7v3h2.5V22h4z"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+
+              <!-- <a href="https://t.me/Subangkar_Kr" target="_blank" rel="noopener"
+                 style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:var(--text); border:1px solid var(--border); background:var(--chip); padding:6px 10px; border-radius:999px">
+                <span>Telegram</span>
+              </a> -->
+
+            <a href="https://scholar.google.com/citations?hl=en&user=psMybBsAAAAJ" target="_blank" rel="noopener"
+            style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:var(--text); border:1px solid var(--border); background:var(--chip); padding:6px 10px; border-radius:999px">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M12 3 2 9l10 6 10-6-10-6zm0 8.2L5.2 9 12 5.8 18.8 9 12 11.2zM4 14v3.5C4 19.4 7.6 21 12 21s8-1.6 8-3.5V14l-8 4.5L4 14z"/>
+            </svg>
+            <span>Google Scholar</span>
+            </a>
+            </div>
+
+            <div class="hr"></div>
+            <div class="small">
+              <strong>Emails</strong>
+              <ul class="list">
+                <li><a href="mailto:subangkar.karmaker@gmail.com"><b>subangkar.karmaker@gmail.com</b></a> (Personal)</li>
+                <li><a href="mailto:sshanto@purdue.edu">sshanto@purdue.edu</a> (Academic/Work)</li>
+                <li><a href="mailto:shanto@cse.uiu.ac.bd">shanto@cse.uiu.ac.bd</a></li>
+                <li><a href="mailto:subangkar.karmaker@ra.cse.buet.ac.bd">subangkar.karmaker@ra.cse.buet.ac.bd</a></li>
+                <li><a href="mailto:subangkar@teacher.cse.buet.ac.bd">subangkar@teacher.cse.buet.ac.bd</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <p class="muted location">
+              <svg class="icon-pin" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 2c-3.31 0-6 2.64-6 5.9 0 4.43 5.63 11.1 5.86 11.39.06.07.14.11.22.11s.16-.04.22-.11C12.37 19 18 12.33 18 7.9 18 4.64 15.31 2 12 2Zm0 8.1a2.2 2.2 0 1 1 0-4.4 2.2 2.2 0 0 1 0 4.4Z"/>
+              </svg>
+              Lawson Computer Science Building, 305 N University St, West Lafayette, IN 47907, USA
+            </p>
+
+            <iframe
+              class="map-embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Lawson+Computer+Science+Building,+305+N+University+St,+West+Lafayette,+IN+47907&output=embed">
+            </iframe>
+            <div class="small muted" style="margin-top:8px;">View on Google Maps</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap small">
+      &copy; <span id="year"></span> Subangkar Karmaker Shanto · All rights reserved.
     </div>
-  </section>
+  </footer>
 
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>

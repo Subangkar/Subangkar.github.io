@@ -1,0 +1,187 @@
+:root{
+  /* Light palette + subtle blue/green accents */
+  --bg: #ffffff;
+  --text: #0b1321;
+  --muted: #55637a;
+  --brand: #1e88ff;   /* blue accent */
+  --brand-2:#10b981;  /* green accent */
+  --border: #e6eaf2;
+  --chip:#f4f7fb;
+  --chip-b:#e7f0ff;
+  --nav-bg:#f7fbff;   /* very light navbar color */
+  --card:#ffffff;
+  --maxw: 1120px;
+  --radius: 14px;
+  --shadow: 0 8px 26px rgba(0,0,0,.06);
+  --topbar-h: 64px;
+  --icon: #2a3e62;    /* icon default color */
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  padding-top: var(--topbar-h);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color:var(--text);
+  line-height:1.65;
+  background: var(--bg);
+  position: relative;
+}
+body::before{
+  content:"";
+  position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(900px 380px at 85% -10%, rgba(30,136,255,.10), transparent 60%),
+    radial-gradient(900px 360px at -10% 0%, rgba(16,185,129,.10), transparent 60%);
+}
+
+.wrap{max-width:var(--maxw); margin:auto; padding:0 20px}
+header.hero{position:relative; padding:48px 0 28px}
+
+/* Fixed top bar */
+.topbar{
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background: var(--nav-bg);
+  border-bottom:1px solid var(--border);
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+  height: var(--topbar-h);
+  display:flex; align-items:center;
+}
+.nav{display:flex; align-items:center; gap:18px}
+.nav a.brand{font-weight:700; letter-spacing:.2px; color:var(--text); text-decoration:none}
+.nav .spacer{flex:1}
+.nav a, .nav button{
+  color:var(--text); text-decoration:none; opacity:.9; font-size:14px; padding:8px 10px; border-radius:8px;
+}
+.nav a:hover{opacity:1; background:#eef5ff}
+.nav .btn{border:1px solid var(--border); background:var(--chip); padding:8px 12px}
+.nav .btn:hover{background:var(--chip-b)}
+.menu{display:flex; gap:8px; flex-wrap:wrap}
+.menu-toggle{display:none; border:1px solid var(--border); background:var(--chip); padding:8px 12px; border-radius:10px}
+
+.hero h1{font-size: clamp(28px, 4.5vw, 56px); margin:0 0 6px}
+.subtitle{font-size: clamp(16px, 2.2vw, 22px); color:var(--muted)}
+.meta{margin-top:10px; color:var(--muted)}
+.cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
+.btn{
+  display:inline-flex; align-items:center; gap:8px; text-decoration:none;
+  border:1px solid var(--border); background:linear-gradient(180deg, rgba(255,255,255,1), rgba(247,249,255,1));
+  color:var(--text); padding:10px 14px; border-radius:12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.04);
+}
+.btn.primary{border-color:transparent; background:linear-gradient(180deg, var(--brand), #3a81ff); color:#fff; box-shadow:0 6px 20px rgba(58,129,255,.25)}
+
+.grid{display:grid; gap:22px}
+.cards{grid-template-columns:repeat(12,1fr)}
+.card{
+  grid-column:span 12; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px;
+  box-shadow:var(--shadow);
+}
+.card h3{margin:0 0 6px}
+.when{color:var(--muted); font-size:.95rem}
+.chips{margin-top:8px}
+.chip{
+  display:inline-block; border:1px solid var(--border); background:var(--chip); padding:.2rem .55rem; border-radius:999px; margin:.15rem .25rem; font-size:.9rem
+}
+.list{padding-left:18px; margin:8px 0}
+.list li{margin:.35rem 0}
+section{padding:22px 0}
+section > .wrap > h2{font-size:clamp(18px,2.2vw,26px); margin:0 0 12px}
+.muted{color:var(--muted)}
+.small{font-size:.95rem}
+.kicker{font-weight:600; letter-spacing:.5px; color:var(--muted); text-transform:uppercase; font-size:.8rem}
+.hr{height:1px; background:linear-gradient(90deg, transparent, var(--border), transparent); margin:28px 0}
+footer{padding:34px 0 60px; color:var(--muted)}
+.last-updated{font-size:.9rem; margin-top:6px}
+
+/* Projects */
+.project{display:grid; grid-template-columns:1fr; gap:8px}
+.project .stack{margin-top:2px}
+.project .links{margin-top:6px}
+
+/* Social icons */
+.social{display:flex; gap:12px; align-items:center; margin:10px 0 2px}
+.social a{display:inline-flex; width:28px; height:28px; align-items:center; justify-content:center; color:var(--icon); text-decoration:none}
+.social a:hover{color:#1e88ff}
+.social svg{width:22px; height:22px; display:block}
+
+/* Responsive */
+@media (max-width:880px){
+  .menu{display:none}
+  .menu.open{display:flex}
+  .menu-toggle{display:inline-flex; align-items:center}
+  .nav{gap:10px; flex-wrap:wrap}
+}
+/* Anchor offset for fixed nav */
+:target{scroll-margin-top: calc(var(--topbar-h) + 12px)}
+
+/* === Added minimal styles (photo + navbar avatar + about header layout) === */
+.nav-avatar{width:32px; height:32px; border-radius:50%; object-fit:cover; border:1px solid var(--border)}
+.about-photo{width:220px; height:220px; border-radius:50%; object-fit:cover; border:2px solid var(--border); box-shadow:var(--shadow)}
+.about-head{display:flex; align-items:center; justify-content:space-between; gap:18px}
+.about-text{flex:1; min-width:0}
+@media (max-width:880px){
+  .about-head{flex-direction:column; align-items:flex-start}
+  .about-photo{margin-top:8px}
+}
+
+/* === Dark mode variable overrides === */
+body.dark{
+  --bg:#0b1321;
+  --text:#e6edf7;
+  --muted:#9fb0c7;
+  --brand:#1e88ff;
+  --brand-2:#10b981;
+  --border:#1f2a44;
+  --chip:#0e1424;
+  --chip-b:#14203a;
+  --nav-bg:#0f1729;
+  --card:#0d1426;
+  --icon:#cfd8e8;
+  --shadow:0 8px 26px rgba(0,0,0,.5);
+}
+
+/* Make CTA buttons readable in dark mode */
+body.dark .btn{
+  /* dark gradient so white text/icons don't wash out */
+  background: linear-gradient(180deg, #121a2f, #0b1321);
+  color: #e6edf7;            /* light text/icons */
+  border-color: var(--border);
+}
+
+/* Dark-friendly hover for top nav links & buttons */
+body.dark .nav a:hover,
+body.dark .nav button:hover{
+  background: var(--chip-b); /* uses dark-mode --chip-b */
+}
+
+/* (Optional) ensure toggle has a predictable base color in light mode */
+.theme-toggle{ color: var(--icon); }
+
+
+
+/* Tiny tweak so the icon aligns nicely */
+.theme-toggle svg{display:block}
+/* Make the theme toggle icon white in dark mode for better contrast */
+body.dark .theme-toggle{ color:#fff; }
+
+
+/* === Map + location marker === */
+.connect-grid{ display:grid; }
+@media (min-width: 880px){
+  .connect-grid .card{ grid-column: span 6; } /* two cards side-by-side */
+}
+
+/* Nice responsive map frame */
+.map-embed{
+  width:100%;
+  aspect-ratio:16 / 11;
+  border:0;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+.location{ display:inline-flex; align-items:center; gap:.45em; }
+.location .icon-pin{
+  width:1em; height:1em; display:inline-block; flex:0 0 auto; vertical-align:-.12em;
+}
